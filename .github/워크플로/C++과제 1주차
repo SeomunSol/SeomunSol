@@ -1,0 +1,38 @@
+#include <iostream>
+//클래스와 객체 선언
+using namespace std;
+//이름공간 선언
+
+
+int main() {
+	//실행 시작 함수
+	char name[12];
+	// 변수를 문자로 설정 뒤에 숫자는 문자의 크기
+	char num[6];
+	cout << "이름 : ";
+	//화면에 출력
+	cin.getline(name, 12 );
+	//입력받는 문자 변수설정
+	cout << endl;
+	cout << "학번 : ";
+	cin >> num;
+	cout << endl;
+	cout << "반갑습니다. " << num << "님" << endl;
+	cout << endl;
+	cout << "학접 입력을 시작합니다." << endl;
+	cout << endl;
+	cout << "================ = SWING ================ = " << endl;
+	cout << "C프로그래밍(3학점) : 4.5" << endl;
+	cout << "컴퓨터및정보보호개론(3학점) : 4.0" << endl;
+	cout << "소프트웨어개발실무영어I(1학점) : 3.5" << endl;
+	cout << "대학고급영어(2학점) : 3.0" << endl;
+	cout << "======================================== = " << endl;
+	cout << endl;
+	float grade;
+	// 변수 실수로 설정
+	grade = (4.5 + 4.0 + 3.5 + 3.0) / 4;
+	cout << name << "(" << num << ") 님의 전체 학점은 " << grade << "입니다. " << endl;
+
+	return 0;
+	//실행종료
+}
